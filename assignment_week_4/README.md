@@ -4,8 +4,8 @@
 The following actions are performed by the R script run_analysis.R
 
 1.  Download the dataset
-Load the subject, activity and measurement data for training
-Load the subject, activity and measurement data for testing
+2.  Load the subject, activity and measurement data for training
+3.  Load the subject, activity and measurement data for testing
 Combine the subject and activity data
 Rename the subject and activity columns
 Assign the column names dynamically using the features.txt file
