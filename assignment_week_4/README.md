@@ -3,7 +3,7 @@
 ## Overview
 The following actions are performed by the R script run_analysis.R
 
-Download the dataset
+1.  Download the dataset
 Load the subject, activity and measurement data for training
 Load the subject, activity and measurement data for testing
 Combine the subject and activity data
