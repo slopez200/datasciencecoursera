@@ -6,14 +6,14 @@ The following actions are performed by the R script run_analysis.R
 1.  Download the dataset
 2.  Load the subject, activity and measurement data for training
 3.  Load the subject, activity and measurement data for testing
-Combine the subject and activity data
-Rename the subject and activity columns
-Assign the column names dynamically using the features.txt file
-Remove duplicate columns that are not required
-Use regular expressions to expand the abbreviated names in the existing column names
-Modify the activity column to use names instead of numeric values
-Aggregate the data to calculate the mean
-Write the data out to a file called tidy.txt
+4.  Combine the subject and activity data
+5.  Rename the subject and activity columns
+6.  Assign the column names dynamically using the features.txt file
+7.  Remove duplicate columns that are not required
+8.  Use regular expressions to expand the abbreviated names in the existing column names
+9.  Modify the activity column to use names instead of numeric values
+10. Aggregate the data to calculate the mean
+11. Write the data out to a file called tidy.txt
 
 
 ## Assumptions
