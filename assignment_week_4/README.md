@@ -18,7 +18,7 @@ The following actions are performed by the R script run_analysis.R
 
 ## Assumptions
 
-working directory means the current directory and all required files are in that directory
+working directory means the current directory where run_analysis.R is executed and all required files are in that directory
     
     
     subject_train.txt
