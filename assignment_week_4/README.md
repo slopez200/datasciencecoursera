@@ -21,18 +21,18 @@ The following actions are performed by the R script run_analysis.R
 working directory means the current directory and all required files are in that directory
     
     
-    .subject_train.txt
+    subject_train.txt
     
-    .y_train.txt
+    y_train.txt
     
-    ./X_train.txt
+    X_train.txt
     
-    ./subject_test.txt
+    subject_test.txt
     
-    ./y_test.txt
+    y_test.txt
     
-    ./X_test.txt
+    X_test.txt
     
-    ./features.txt
+    features.txt
     
  
