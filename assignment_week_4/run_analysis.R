@@ -1,15 +1,3 @@
-## assumptions:
-## working directory means the current directory and all required files are in that directory
-##    .
-##    ./subject_train.txt
-##    ./y_train.txt
-##    ./X_train.txt
-##    ./subject_test.txt
-##    ./y_test.txt
-##    ./X_test.txt
-##    ./features.txt
-## 
-
 assignment_4 <- function(){
   
   library(dplyr)
@@ -18,20 +6,20 @@ assignment_4 <- function(){
   
   ### Train Data ###
   
-  trainSubject <- read.table("./subject_train.txt")
+  trainSubject <- read.table("./data/ass_data/UCI HAR Dataset/train/subject_train.txt")
 
-  trainActivity <- read.table("./y_train.txt")
+  trainActivity <- read.table("./data/ass_data/UCI HAR Dataset/train/y_train.txt")
 
-  trainData <- read.table(file = "./X_train.txt", header = FALSE)
+  trainData <- read.table(file = "./data/ass_data/UCI HAR Dataset/train/X_train.txt", header = FALSE)
 
 
   ### Test Data ###
 
-  testSubject <- read.table("./subject_test.txt")
+  testSubject <- read.table("./data/ass_data/UCI HAR Dataset/test/subject_test.txt")
 
-  testActivity <- read.table("./y_test.txt")
+  testActivity <- read.table("./data/ass_data/UCI HAR Dataset/test/y_test.txt")
 
-  testData <- read.table(file = "./X_test.txt", header = FALSE)
+  testData <- read.table(file = "./data/ass_data/UCI HAR Dataset/test/X_test.txt", header = FALSE)
 
   ### Combine Data and Change the Variable Names ###
 
@@ -47,7 +35,7 @@ assignment_4 <- function(){
 
   ## assign the original column names from features.txt
 
-  originalColumnNames <- read.table("./features.txt")
+  originalColumnNames <- read.table("./data/ass_data/UCI HAR Dataset/features.txt")
   
   originalColumnNames <- originalColumnNames[,2]
   
@@ -88,6 +76,7 @@ assignment_4 <- function(){
   
   # write the new data out to a file
   
-  # write.table(AllVariablesDataFrame,file="./data/tidy.txt",row.name=FALSE)
+  write.table(AllVariablesDataFrame,file="./tidy.txt",row.name=FALSE)
+  
   
 }
